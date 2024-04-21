@@ -1,5 +1,6 @@
 def fibonacci(n):
     a, b = 0, 1
-    while b < n:
-        a, b = b, a+b
+    for i in range(n - 1):
+        a, b = b, a + b
+
     return b
